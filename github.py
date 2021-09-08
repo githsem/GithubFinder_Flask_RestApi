@@ -17,6 +17,7 @@ def index():
         
         if "message" in user_info:
             return render_template("index.html", error="User not found...")
+            
         return render_template("index.html", profile=user_info,repos=repos)
 
     else:
